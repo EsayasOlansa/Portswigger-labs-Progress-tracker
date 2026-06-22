@@ -34,17 +34,17 @@ This file tracks my progress through [PortSwigger Web Security Academy](https://
 
 | No | Date       | Topic          | Lab Title                                   | Difficulty  | Writeup Link |
 |----|------------|----------------|---------------------------------------------|-------------|--------------|
-| 1  | 2026-06-17 |  SQL injection |  |  | N/A |
-| 2  | 2026-06-17 |  SQL injection |  |  | N/A |
-| 3  | 2026-06-17 |  SQL injection |  |  | N/A |
-| 4  | 2026-06-17 |  SQL injection |  |  | N/A |
-| 5  | 2026-00-00 |  SQL injection |  |  | N/A |
-| 6  | 2026-00-00 |  SQL injection |  |  | N/A |
-| 7  | 2026-00-00 |  SQL injection |  |  | N/A |
-| 8  | 2026-00-00 |  SQL injection |  |  | N/A |
-| 9  | 2026-00-00 |  SQL injection |  |  | N/A |
-| 10 | 2026-00-00 |  SQL injection |  |  | N/A |
-| 11 | 2026-00-00 |  SQL injection |  |  | N/A |
+| 1  | 2026-06-17 |  SQL injection | SQL injection vulnerability in WHERE clause allowing retrieval of hidden data | APPRENTICE | N/A |
+| 2  | 2026-06-17 |  SQL injection | SQL injection vulnerability allowing login bypass | APPRENTICE | N/A |
+| 3  | 2026-06-17 |  SQL injection | SQL injection attack, querying the database type and version on Oracle |  | N/A |
+| 4  | 2026-06-17 |  SQL injection | SQL injection attack, querying the database type and version on MySQL and Microsoft |  | N/A |
+| 5  | 2026-00-00 |  SQL injection | SQL injection attack, listing the database contents on non-Oracle databases |  | N/A |
+| 6  | 2026-00-00 |  SQL injection | SQL injection attack, listing the database contents on Oracle |  | N/A |
+| 7  | 2026-00-00 |  SQL injection | SQL injection UNION attack, determining the number of columns returned by the query |  | N/A |
+| 8  | 2026-00-00 |  SQL injection | SQL injection UNION attack, finding a column containing text |  | N/A |
+| 9  | 2026-00-00 |  SQL injection | SQL injection UNION attack, retrieving data from other tables |  | N/A |
+| 10 | 2026-00-00 |  SQL injection | SQL injection UNION attack, retrieving multiple values in a single column |  | N/A |
+| 11 | 2026-00-00 |  SQL injection | Blind SQL injection with conditional responses |  | N/A |
 | 12 | 2026-00-00 |     |  |  | N/A |
 | 13 | 2026-00-00 |     |  |  | N/A |
 | 14 | 2026-00-00 |     |  |  | N/A |
