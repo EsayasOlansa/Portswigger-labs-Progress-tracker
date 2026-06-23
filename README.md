@@ -45,8 +45,8 @@ This file tracks my progress through [PortSwigger Web Security Academy](https://
 | 9  | 2026-00-00 |  SQL injection | SQL injection UNION attack, retrieving data from other tables | PRACTITIONER | N/A |
 | 10 | 2026-00-00 |  SQL injection | SQL injection UNION attack, retrieving multiple values in a single column | PRACTITIONER | N/A |
 | 11 | 2026-00-00 |  SQL injection | Blind SQL injection with conditional responses | PRACTITIONER | N/A |
-| 12 | 2026-00-00 |     |  |  | N/A |
-| 13 | 2026-00-00 |     |  |  | N/A |
+| 12 | 2026-06-23 |   Authentication  | Username enumeration via different responses | APPRENTICE | N/A |
+| 13 | 2026-00-00 |   Authentication  | 2FA simple bypass | APPRENTICE | N/A |
 | 14 | 2026-00-00 |     |  |  | N/A |
 | 15 | 2026-00-00 |     |  |  | N/A |
 | 16 | 2026-00-00 |     |  |  | N/A |
