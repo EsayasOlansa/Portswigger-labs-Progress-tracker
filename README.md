@@ -6,7 +6,7 @@ This file tracks my progress through [PortSwigger Web Security Academy](https://
 
 ## Level progress
 - **Apprentice**: 5 of 61
-- **Practitioner**: 9 of 174
+- **Practitioner**: 11 of 174
 - **Expert**: 0 of 39
 
 ## Categories Covered
