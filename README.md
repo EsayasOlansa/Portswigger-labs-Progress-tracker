@@ -47,7 +47,7 @@ This file tracks my progress through [PortSwigger Web Security Academy](https://
 | 11 | 2026-00-00 |  SQL injection | Blind SQL injection with conditional responses | PRACTITIONER | N/A |
 | 12 | 2026-06-23 |   Authentication  | Username enumeration via different responses | APPRENTICE | N/A |
 | 13 | 2026-06-23 |   Authentication  | 2FA simple bypass | APPRENTICE | N/A |
-| 14 | 2026-06-24 |   Authentication  |  |  | N/A |
+| 14 | 2026-06-24 |   Authentication  |  | APPRENTICE | N/A |
 | 15 | 2026-00-00 |   Authentication  |  |  | N/A |
 | 16 | 2026-00-00 |   Authentication  |  |  | N/A |
 | 17 | 2026-00-00 |   Authentication  |  |  | N/A |
