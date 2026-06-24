@@ -49,11 +49,11 @@ This file tracks my progress through [PortSwigger Web Security Academy](https://
 | 13 | 2026-06-23 |   Authentication  | 2FA simple bypass | APPRENTICE | N/A |
 | 14 | 2026-06-24 |   Authentication  | Password reset broken logic | APPRENTICE | N/A |
 | 15 | 2026-00-00 |   Authentication  | Username enumeration via subtly different responses | PRACTITIONER | N/A |
-| 16 | 2026-00-00 |   Authentication  |  | PRACTITIONER | N/A |
+| 16 | 2026-00-00 |   Authentication  | Username enumeration via response timing | PRACTITIONER | N/A |
 | 17 | 2026-00-00 |   Authentication  |  |  | N/A |
-| 18 | 2026-00-00 |     |  |  | N/A |
-| 19 | 2026-00-00 |     |  |  | N/A |
-| 20 | 2026-00-00 |     |  |  | N/A |
+| 18 | 2026-00-00 |   Authentication  |  |  | N/A |
+| 19 | 2026-00-00 |   Authentication  |  |  | N/A |
+| 20 | 2026-00-00 |   Authentication  |  |  | N/A |
 | 21 | 2026-00-00 |     |  |  | N/A |
 | 23 | 2026-00-00 |     |  |  | N/A |
 | 24 | 2026-00-00 |     |  |  | N/A |
@@ -62,3 +62,14 @@ This file tracks my progress through [PortSwigger Web Security Academy](https://
 | 27 | 2026-00-00 |     |  |  | N/A |
 | 28 | 2026-00-00 |     |  |  | N/A |
 | 29 | 2026-00-00 |     |  |  | N/A |
+| 30 | 2026-00-00 |     |  |  | N/A |
+| 31 | 2026-00-00 |     |  |  | N/A |
+| 32 | 2026-00-00 |     |  |  | N/A |
+| 33 | 2026-00-00 |     |  |  | N/A |
+| 34 | 2026-00-00 |     |  |  | N/A |
+| 35 | 2026-00-00 |     |  |  | N/A |
+| 36 | 2026-00-00 |     |  |  | N/A |
+| 37 | 2026-00-00 |     |  |  | N/A |
+| 38 | 2026-00-00 |     |  |  | N/A |
+| 39 | 2026-00-00 |     |  |  | N/A |
+| 40 | 2026-00-00 |     |  |  | N/A |
