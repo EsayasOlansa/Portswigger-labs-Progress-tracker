@@ -53,7 +53,7 @@ This file tracks my progress through [PortSwigger Web Security Academy](https://
 | 17 | 2026-00-00 |   Authentication  |  | PRACTITIONER | N/A |
 | 18 | 2026-00-00 |   Authentication  |  | PRACTITIONER | N/A |
 | 19 | 2026-00-00 |   Authentication  |  | PRACTITIONER | N/A |
-| 20 | 2026-00-00 |   Authentication  |  |  | N/A |
+| 20 | 2026-00-00 |   Authentication  |  | PRACTITIONER | N/A |
 | 21 | 2026-00-00 |     |  |  | N/A |
 | 23 | 2026-00-00 |     |  |  | N/A |
 | 24 | 2026-00-00 |     |  |  | N/A |
