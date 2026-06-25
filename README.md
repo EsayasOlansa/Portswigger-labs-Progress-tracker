@@ -6,12 +6,12 @@ This file tracks my progress through [PortSwigger Web Security Academy](https://
 
 ## Level progress
 - **Apprentice**: 5 of 61
-- **Practitioner**: 11 of 174
+- **Practitioner**: 13 of 174
 - **Expert**: 0 of 39
 
 ## Categories Covered
 
-- **Authentication vulnerabilities**: 5/14 lab
+- **Authentication vulnerabilities**: 7/14 lab
 - **SQL injection**: 11/18 lab
 - **Access control**: 0/13 lab
 
