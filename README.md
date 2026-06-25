@@ -52,7 +52,7 @@ This file tracks my progress through [PortSwigger Web Security Academy](https://
 | 16 | 2026-06-24 |   Authentication  | Username enumeration via response timing | PRACTITIONER | N/A |
 | 17 | 2026-00-00 |   Authentication  |  | PRACTITIONER | N/A |
 | 18 | 2026-00-00 |   Authentication  |  | PRACTITIONER | N/A |
-| 19 | 2026-00-00 |   Authentication  |  |  | N/A |
+| 19 | 2026-00-00 |   Authentication  |  | PRACTITIONER | N/A |
 | 20 | 2026-00-00 |   Authentication  |  |  | N/A |
 | 21 | 2026-00-00 |     |  |  | N/A |
 | 23 | 2026-00-00 |     |  |  | N/A |
