@@ -45,16 +45,16 @@ This file tracks my progress through [PortSwigger Web Security Academy](https://
 | 9  | 2026-00-00 |  SQL injection | SQL injection UNION attack, retrieving data from other tables | PRACTITIONER | N/A |
 | 10 | 2026-00-00 |  SQL injection | SQL injection UNION attack, retrieving multiple values in a single column | PRACTITIONER | N/A |
 | 11 | 2026-00-00 |  SQL injection | Blind SQL injection with conditional responses | PRACTITIONER | N/A |
-| 12 | 2026-06-23 |   Authentication  | Username enumeration via different responses | APPRENTICE | N/A |
-| 13 | 2026-06-23 |   Authentication  | 2FA simple bypass | APPRENTICE | N/A |
-| 14 | 2026-06-24 |   Authentication  | Password reset broken logic | APPRENTICE | N/A |
-| 15 | 2026-06-24 |   Authentication  | Username enumeration via subtly different responses | PRACTITIONER | N/A |
-| 16 | 2026-06-24 |   Authentication  | Username enumeration via response timing | PRACTITIONER | N/A |
-| 17 | 2026-06-25 |   Authentication  | Broken brute-force protection, IP block | PRACTITIONER | N/A |
-| 18 | 2026-06-25 |   Authentication  | Username enumeration via account lock | PRACTITIONER | N/A |
-| 19 | 2026-00-00 |   Authentication  |  | PRACTITIONER | N/A |
-| 20 | 2026-00-00 |   Authentication  |  | PRACTITIONER | N/A |
-| 21 | 2026-00-00 |     |  |  | N/A |
+| 12 | 2026-06-22 |   Authentication  | Username enumeration via different responses | APPRENTICE | N/A |
+| 13 | 2026-06-22 |   Authentication  | 2FA simple bypass | APPRENTICE | N/A |
+| 14 | 2026-06-23 |   Authentication  | Password reset broken logic | APPRENTICE | N/A |
+| 15 | 2026-06-23 |   Authentication  | Username enumeration via subtly different responses | PRACTITIONER | N/A |
+| 16 | 2026-06-23 |   Authentication  | Username enumeration via response timing | PRACTITIONER | N/A |
+| 17 | 2026-06-24 |   Authentication  | Broken brute-force protection, IP block | PRACTITIONER | N/A |
+| 18 | 2026-06-24 |   Authentication  | Username enumeration via account lock | PRACTITIONER | N/A |
+| 19 | 2026-06-25 |   Authentication  | 2FA broken logic | PRACTITIONER | N/A |
+| 20 | 2026-06-25 |   Authentication  | Brute-forcing a stay-logged-in cookie | PRACTITIONER | N/A |
+| 21 | 2026-06-25 |   Authentication  | Offline password cracking | PRACTITIONER | N/A |
 | 23 | 2026-00-00 |     |  |  | N/A |
 | 24 | 2026-00-00 |     |  |  | N/A |
 | 25 | 2026-00-00 |     |  |  | N/A |
