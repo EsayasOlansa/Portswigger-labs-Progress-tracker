@@ -50,8 +50,8 @@ This file tracks my progress through [PortSwigger Web Security Academy](https://
 | 14 | 2026-06-24 |   Authentication  | Password reset broken logic | APPRENTICE | N/A |
 | 15 | 2026-06-24 |   Authentication  | Username enumeration via subtly different responses | PRACTITIONER | N/A |
 | 16 | 2026-06-24 |   Authentication  | Username enumeration via response timing | PRACTITIONER | N/A |
-| 17 | 2026-06-29 |   Authentication  |  | PRACTITIONER | N/A |
-| 18 | 2026-00-00 |   Authentication  |  | PRACTITIONER | N/A |
+| 17 | 2026-06-29 |   Authentication  | Broken brute-force protection, IP block | PRACTITIONER | N/A |
+| 18 | 2026-06-29 |   Authentication  | Username enumeration via account lock | PRACTITIONER | N/A |
 | 19 | 2026-00-00 |   Authentication  |  | PRACTITIONER | N/A |
 | 20 | 2026-00-00 |   Authentication  |  | PRACTITIONER | N/A |
 | 21 | 2026-00-00 |     |  |  | N/A |
