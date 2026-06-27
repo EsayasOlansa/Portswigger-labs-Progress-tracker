@@ -56,8 +56,8 @@ This file tracks my progress through [PortSwigger Web Security Academy](https://
 | 20 | 2026-06-25 |   Authentication  | Brute-forcing a stay-logged-in cookie | PRACTITIONER | N/A |
 | 21 | 2026-06-25 |   Authentication  | Offline password cracking | PRACTITIONER | N/A |
 | 23 | 2026-06-26 |   Authentication  | Broken brute-force protection, multiple credentials per request | EXPERT | N/A |
-| 24 | 2026-00-00 |   Authenticatio  |  |  | N/A |
-| 25 | 2026-00-00 |     |  |  | N/A |
+| 24 | 2026-00-00 |   Authentication  |  | PRACTITIONER | N/A |
+| 25 | 2026-00-00 |   Authentication  |  | PRACTITIONER | N/A |
 | 26 | 2026-00-00 |     |  |  | N/A |
 | 27 | 2026-00-00 |     |  |  | N/A |
 | 28 | 2026-00-00 |     |  |  | N/A |
