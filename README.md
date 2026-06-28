@@ -55,16 +55,17 @@ This file tracks my progress through [PortSwigger Web Security Academy](https://
 | 19 | 2026-06-25 |   Authentication  | 2FA broken logic | PRACTITIONER | N/A |
 | 20 | 2026-06-25 |   Authentication  | Brute-forcing a stay-logged-in cookie | PRACTITIONER | N/A |
 | 21 | 2026-06-25 |   Authentication  | Offline password cracking | PRACTITIONER | N/A |
-| 23 | 2026-06-26 |   Authentication  | Broken brute-force protection, multiple credentials per request | EXPERT | N/A |
-| 24 | 2026-06-27 |   Authentication  | Password reset poisoning via middleware | PRACTITIONER | N/A |
-| 25 | 2026-06-27 |   Authentication  | Password brute-force via password change | PRACTITIONER | N/A |
-| 26 | 2026-06-28 |  Authentication   | 2FA bypass using a brute-force attack | EXPERT | N/A |
+| 22 | 2026-06-26 |   Authentication  | Broken brute-force protection, multiple credentials per request | EXPERT | N/A |
+| 23 | 2026-06-27 |   Authentication  | Password reset poisoning via middleware | PRACTITIONER | N/A |
+| 24 | 2026-06-27 |   Authentication  | Password brute-force via password change | PRACTITIONER | N/A |
+| 25 | 2026-06-28 |  Authentication   | 2FA bypass using a brute-force attack | EXPERT | N/A |
+| 26 | 2026-00-00 |     |  |  | N/A |
 | 27 | 2026-00-00 |     |  |  | N/A |
 | 28 | 2026-00-00 |     |  |  | N/A |
 | 29 | 2026-00-00 |     |  |  | N/A |
 | 30 | 2026-00-00 |     |  |  | N/A |
 | 31 | 2026-00-00 |     |  |  | N/A |
-| 32 | 2026-00-00 |     |  |  | N/A |
+| 31 | 2026-00-00 |     |  |  | N/A |
 | 33 | 2026-00-00 |     |  |  | N/A |
 | 34 | 2026-00-00 |     |  |  | N/A |
 | 35 | 2026-00-00 |     |  |  | N/A |
