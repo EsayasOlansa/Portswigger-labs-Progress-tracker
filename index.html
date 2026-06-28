@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PortSwigger Lab Tracker</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --surface-0: #f4f4f0; --surface-1: #f0efea; --surface-2: #ffffff;
+    --text-primary: #1a1a18; --text-secondary: #5a5a56; --text-muted: #9a9a94;
+    --text-accent: #185FA5; --text-success: #3B6D11; --text-warning: #854F0B; --text-danger: #A32D2D; --text-pro: #534AB7;
+    --bg-accent: #E6F1FB; --bg-success: #EAF3DE; --bg-warning: #FAEEDA; --bg-danger: #FCEBEB; --bg-pro: #EEEDFE;
+    --border-accent: #B5D4F4; --border-success: #C0DD97; --border-warning: #FAC775; --border-danger: #F7C1C1; --border-pro: #CECBF6;
+    --fill-accent: #378ADD; --fill-success: #639922; --fill-warning: #BA7517; --fill-danger: #E24B4A;
+    --border: rgba(0,0,0,0.08); --border-strong: rgba(0,0,0,0.14);
+    --radius: 8px; --font-sans: system-ui, -apple-system, sans-serif; --font-mono: 'SF Mono', monospace;
+  }
+  body { font-family: var(--font-sans); background: var(--surface-0); color: var(--text-primary); padding: 2rem; max-width: 860px; margin: 0 auto; }
+
+  .header { padding: 2rem 0 1.5rem; border-bottom: 0.5px solid var(--border); margin-bottom: 1.5rem; }
+  .title-row { display: flex; align-items: center; gap: 12px; margin-bottom: 0.5rem; }
+  .skull { font-size: 28px; }
+  h1 { font-size: 20px; font-weight: 500; color: var(--text-primary); }
+  .subtitle { font-size: 13px; color: var(--text-muted); }
+  .subtitle a { color: var(--text-accent); text-decoration: none; }
+  .badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 1rem; }
+  .badge { display: inline-flex; align-items: center; gap: 5px; font-size: 11px; font-weight: 500; padding: 3px 10px; border-radius: 20px; letter-spacing: 0.02em; }
+  .badge-blue { background: var(--bg-accent); color: var(--text-accent); border: 0.5px solid var(--border-accent); }
+  .badge-green { background: var(--bg-success); color: var(--text-success); border: 0.5px solid var(--border-success); }
+  .badge-purple { background: var(--bg-pro); color: var(--text-pro); border: 0.5px solid var(--border-pro); }
+  .badge-warn { background: var(--bg-warning); color: var(--text-warning); border: 0.5px solid var(--border-warning); }
+  .badge i { font-size: 12px; }
+
+  .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin-bottom: 1.5rem; }
+  .stat-card { background: var(--surface-1); border-radius: var(--radius); padding: 14px 16px; }
+  .stat-label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px; }
+  .stat-value { font-size: 26px; font-weight: 500; color: var(--text-primary); line-height: 1; }
+  .stat-sub { font-size: 12px; color: var(--text-secondary); margin-top: 4px; }
+  .stat-bar { height: 3px; border-radius: 2px; background: var(--border); margin-top: 10px; }
+  .stat-fill { height: 100%; border-radius: 2px; }
+
+  .section { margin-bottom: 1.5rem; }
+  .section-title { font-size: 11px; font-weight: 500; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 0.5px solid var(--border); display: flex; align-items: center; gap: 6px; }
+  .section-title i { font-size: 13px; }
+
+  .cat-pill { display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border-radius: var(--radius); background: var(--surface-1); border: 0.5px solid var(--border); font-size: 12px; margin: 0 6px 6px 0; }
+  .cat-name { color: var(--text-primary); font-weight: 500; }
+  .cat-count { color: var(--text-muted); }
+  .cat-dot { width: 6px; height: 6px; border-radius: 50%; }
+
+  .filter-row { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
+  .filter-btn { font-size: 12px; padding: 4px 12px; border-radius: 20px; border: 0.5px solid var(--border-strong); background: transparent; color: var(--text-secondary); cursor: pointer; font-family: var(--font-sans); }
+  .filter-btn:hover { background: var(--surface-1); color: var(--text-primary); }
+  .filter-btn.active { background: var(--bg-accent); color: var(--text-accent); border-color: var(--border-accent); font-weight: 500; }
+  .search-wrap { position: relative; flex: 1; min-width: 140px; }
+  .search-wrap i { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-size: 14px; color: var(--text-muted); pointer-events: none; }
+  .search-wrap input { width: 100%; padding: 5px 10px 5px 30px; font-size: 12px; border-radius: 20px; border: 0.5px solid var(--border-strong); background: var(--surface-1); color: var(--text-primary); font-family: var(--font-sans); outline: none; }
+
+  .table-wrap { max-height: 480px; overflow-y: auto; border: 0.5px solid var(--border); border-radius: var(--radius); }
+  .lab-table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+  .lab-table th { text-align: left; font-size: 11px; font-weight: 500; color: var(--text-muted); padding: 6px 8px; border-bottom: 0.5px solid var(--border-strong); text-transform: uppercase; letter-spacing: 0.05em; position: sticky; top: 0; background: var(--surface-2); }
+  .lab-table td { padding: 7px 8px; border-bottom: 0.5px solid var(--border); vertical-align: middle; }
+  .lab-table tr:last-child td { border-bottom: none; }
+  .lab-table tr.solved:hover td { background: var(--surface-1); }
+  .lab-table tr.pending td { opacity: 0.35; }
+  .no-col { color: var(--text-muted); font-size: 11px; min-width: 28px; }
+  .date-col { color: var(--text-secondary); white-space: nowrap; font-size: 11px; font-family: var(--font-mono); }
+  .topic-tag { display: inline-block; font-size: 10px; padding: 2px 7px; border-radius: 10px; font-weight: 500; white-space: nowrap; }
+  .tag-sqli { background: #E6F1FB; color: #185FA5; }
+  .tag-auth { background: #EEEDFE; color: #534AB7; }
+  .tag-empty { background: var(--surface-1); color: var(--text-muted); }
+  .title-col { color: var(--text-primary); line-height: 1.4; max-width: 260px; }
+  .diff-badge { font-size: 10px; padding: 2px 7px; border-radius: 10px; font-weight: 500; white-space: nowrap; display: inline-block; }
+  .diff-apprentice { background: var(--bg-success); color: var(--text-success); }
+  .diff-practitioner { background: var(--bg-warning); color: var(--text-warning); }
+  .diff-expert { background: var(--bg-danger); color: var(--text-danger); }
+  .count-note { font-size: 11px; color: var(--text-muted); margin-top: 8px; }
+  .empty-row td { text-align: center; color: var(--text-muted); padding: 24px; font-size: 12px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="title-row">
+    <span class="skull">🕵️</span>
+    <div>
+      <h1>PortSwigger Lab Tracker</h1>
+      <p class="subtitle"><a href="https://portswigger.net/web-security" target="_blank">portswigger.net/web-security</a> · Web application pentesting progress</p>
+    </div>
+  </div>
+  <div class="badges">
+    <span class="badge badge-blue"><i class="ti ti-flag"></i> 25 solved</span>
+    <span class="badge badge-warn"><i class="ti ti-calendar"></i> Updated 2026-06-28</span>
+    <span class="badge badge-green"><i class="ti ti-trending-up"></i> Newbie → advancing</span>
+    <span class="badge badge-purple"><i class="ti ti-chart-pie"></i> 62% complete</span>
+  </div>
+</div>
+
+<div class="stats-grid">
+  <div class="stat-card">
+    <div class="stat-label">Apprentice</div>
+    <div class="stat-value">5</div>
+    <div class="stat-sub">of 61 labs</div>
+    <div class="stat-bar"><div class="stat-fill" style="width:8.2%; background:var(--fill-success);"></div></div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">Practitioner</div>
+    <div class="stat-value">18</div>
+    <div class="stat-sub">of 174 labs</div>
+    <div class="stat-bar"><div class="stat-fill" style="width:10.3%; background:var(--fill-warning);"></div></div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">Expert</div>
+    <div class="stat-value">2</div>
+    <div class="stat-sub">of 39 labs</div>
+    <div class="stat-bar"><div class="stat-fill" style="width:5.1%; background:var(--fill-danger);"></div></div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label">Total solved</div>
+    <div class="stat-value">25</div>
+    <div class="stat-sub">of 274 labs</div>
+    <div class="stat-bar"><div class="stat-fill" style="width:9.1%; background:var(--fill-accent);"></div></div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title"><i class="ti ti-category"></i> Categories</div>
+  <div>
+    <span class="cat-pill"><span class="cat-dot" style="background:#185FA5;"></span><span class="cat-name">SQL injection</span><span class="cat-count">11/18</span></span>
+    <span class="cat-pill"><span class="cat-dot" style="background:#534AB7;"></span><span class="cat-name">Authentication</span><span class="cat-count">14/14 ✓</span></span>
+    <span class="cat-pill"><span class="cat-dot" style="background:#9a9a94;"></span><span class="cat-name">Access control</span><span class="cat-count">0/13</span></span>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title"><i class="ti ti-list"></i> Solved labs</div>
+
+  <div class="filter-row">
+    <div class="search-wrap">
+      <i class="ti ti-search"></i>
+      <input type="text" id="searchInput" placeholder="Search labs...">
+    </div>
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="SQL Injection">SQLi</button>
+    <button class="filter-btn" data-filter="Authentication">Auth</button>
+    <button class="filter-btn" data-filter="APPRENTICE">Apprentice</button>
+    <button class="filter-btn" data-filter="PRACTITIONER">Practitioner</button>
+    <button class="filter-btn" data-filter="EXPERT">Expert</button>
+  </div>
+
+  <div class="table-wrap">
+    <table class="lab-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Date</th>
+          <th>Topic</th>
+          <th>Lab title</th>
+          <th>Difficulty</th>
+          <th>Writeup</th>
+        </tr>
+      </thead>
+      <tbody id="labBody"></tbody>
+    </table>
+  </div>
+  <p class="count-note" id="countNote"></p>
+</div>
+
+<script>
+const labs = [
+  {no:1,date:"2026-06-17",topic:"SQL Injection",title:"SQL injection vulnerability in WHERE clause allowing retrieval of hidden data",diff:"APPRENTICE",writeup:"N/A"},
+  {no:2,date:"2026-06-17",topic:"SQL Injection",title:"SQL injection vulnerability allowing login bypass",diff:"APPRENTICE",writeup:"N/A"},
+  {no:3,date:"2026-06-17",topic:"SQL Injection",title:"SQL injection attack, querying the database type and version on Oracle",diff:"PRACTITIONER",writeup:"N/A"},
+  {no:4,date:"2026-06-17",topic:"SQL Injection",title:"SQL injection attack, querying the database type and version on MySQL and Microsoft",diff:"PRACTITIONER",writeup:"N/A"},
+  {no:5,date:"2026-06-17",topic:"SQL Injection",title:"SQL injection attack, listing the database contents on non-Oracle databases",diff:"PRACTITIONER",writeup:"N/A"},
+  {no:6,date:"2026-06-17",topic:"SQL Injection",title:"SQL injection attack, listing the database contents on Oracle",diff:"PRACTITIONER",writeup:"N/A"},
+  {no:7,date:"2026-06-17",topic:"SQL Injection",title:"SQL injection UNION attack, determining the number of columns returned by the query",diff:"PRACTITIONER",writeup:"N/A"},
+  {no:8,date:"2026-06-17",topic:"SQL Injection",title:"SQL injection UNION attack, finding a column containing text",diff:"PRACTITIONER",writeup:"N/A"},
+  {no:9,date:"2026-06-17",topic:"SQL Injection",title:"SQL injection UNION attack, retrieving data from other tables",diff:"PRACTITIONER",writeup:"N/A"},
+  {no:10,date:"2026-06-17",topic:"SQL Injection",title:"SQL injection UNION attack, retrieving multiple values in a single column",diff:"PRACTITIONER",writeup:"N/A"},
+  {no:11,date:"2026-06-17",topic:"SQL Injection",title:"Blind SQL injection with conditional responses",diff:"PRACTITIONER",writeup:"N/A"},
+  {no:12,date:"2026-06-22",topic:"Authentication",title:"Username enumeration via different responses",diff:"APPRENTICE",writeup:"N/A"},
+  {no:13,date:"2026-06-22",topic:"Authentication",title:"2FA simple bypass",diff:"APPRENTICE",writeup:"N/A"},
+  {no:14,date:"2026-06-23",topic:"Authentication",title:"Password reset broken logic",diff:"APPRENTICE",writeup:"N/A"},
+  {no:15,date:"2026-06-23",topic:"Authentication",title:"Username enumeration via subtly different responses",diff:"PRACTITIONER",writeup:"N/A"},
+  {no:16,date:"2026-06-23",topic:"Authentication",title:"Username enumeration via response timing",diff:"PRACTITIONER",writeup:"N/A"},
+  {no:17,date:"2026-06-24",topic:"Authentication",title:"Broken brute-force protection, IP block",diff:"PRACTITIONER",writeup:"N/A"},
+  {no:18,date:"2026-06-24",topic:"Authentication",title:"Username enumeration via account lock",diff:"PRACTITIONER",writeup:"N/A"},
+  {no:19,date:"2026-06-25",topic:"Authentication",title:"2FA broken logic",diff:"PRACTITIONER",writeup:"N/A"},
+  {no:20,date:"2026-06-25",topic:"Authentication",title:"Brute-forcing a stay-logged-in cookie",diff:"PRACTITIONER",writeup:"N/A"},
+  {no:21,date:"2026-06-25",topic:"Authentication",title:"Offline password cracking",diff:"PRACTITIONER",writeup:"N/A"},
+  {no:22,date:"2026-06-26",topic:"Authentication",title:"Broken brute-force protection, multiple credentials per request",diff:"EXPERT",writeup:"N/A"},
+  {no:23,date:"2026-06-27",topic:"Authentication",title:"Password reset poisoning via middleware",diff:"PRACTITIONER",writeup:"N/A"},
+  {no:24,date:"2026-06-27",topic:"Authentication",title:"Password brute-force via password change",diff:"PRACTITIONER",writeup:"N/A"},
+  {no:25,date:"2026-06-28",topic:"Authentication",title:"2FA bypass using a brute-force attack",diff:"EXPERT",writeup:"N/A"},
+  ...Array.from({length:15},(_,i)=>({no:26+i,date:null,topic:"",title:"",diff:"",writeup:"N/A"}))
+];
+
+const topicClass = t => t==="SQL Injection"?"tag-sqli":t==="Authentication"?"tag-auth":"tag-empty";
+const diffClass  = d => d==="APPRENTICE"?"diff-apprentice":d==="PRACTITIONER"?"diff-practitioner":d==="EXPERT"?"diff-expert":"";
+
+let activeFilter = "all", searchVal = "";
+
+function render() {
+  const tbody = document.getElementById("labBody");
+  const q = searchVal.toLowerCase();
+  const filtered = labs.filter(l => {
+    if (!l.date && activeFilter !== "all") return false;
+    if (activeFilter !== "all" && l.topic !== activeFilter && l.diff !== activeFilter) return false;
+    if (q && !(l.title.toLowerCase().includes(q) || l.topic.toLowerCase().includes(q) || l.diff.toLowerCase().includes(q))) return false;
+    return true;
+  });
+  const solved = filtered.filter(l => l.date);
+  tbody.innerHTML = filtered.length ? filtered.map(l => l.date ? `
+    <tr class="solved">
+      <td class="no-col">${l.no}</td>
+      <td class="date-col">${l.date}</td>
+      <td><span class="topic-tag ${topicClass(l.topic)}">${l.topic}</span></td>
+      <td class="title-col">${l.title}</td>
+      <td><span class="diff-badge ${diffClass(l.diff)}">${l.diff}</span></td>
+      <td style="color:var(--text-muted);font-size:11px;">${l.writeup}</td>
+    </tr>` : `
+    <tr class="pending">
+      <td class="no-col">${l.no}</td>
+      <td class="date-col">—</td>
+      <td><span class="topic-tag tag-empty">—</span></td>
+      <td class="title-col" style="color:var(--text-muted);">Pending...</td>
+      <td></td><td></td>
+    </tr>`).join("") : `<tr class="empty-row"><td colspan="6">No labs match your search.</td></tr>`;
+  document.getElementById("countNote").textContent = `Showing ${solved.length} solved lab${solved.length !== 1 ? "s" : ""} · ${filtered.length} rows total`;
+}
+
+document.querySelectorAll(".filter-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    activeFilter = btn.dataset.filter;
+    render();
+  });
+});
+document.getElementById("searchInput").addEventListener("input", e => {
+  searchVal = e.target.value;
+  render();
+});
+render();
+</script>
+</body>
+</html>
