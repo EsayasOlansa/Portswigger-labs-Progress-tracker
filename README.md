@@ -58,7 +58,7 @@ This file tracks my progress through [PortSwigger Web Security Academy](https://
 | 23 | 2026-06-26 |   Authentication  | Broken brute-force protection, multiple credentials per request | EXPERT | N/A |
 | 24 | 2026-06-27 |   Authentication  | Password reset poisoning via middleware | PRACTITIONER | N/A |
 | 25 | 2026-06-27 |   Authentication  | Password brute-force via password change | PRACTITIONER | N/A |
-| 26 | 2026-00-00 |     |  |  | N/A |
+| 26 | 2026-06-28 |  Authentication   | 2FA bypass using a brute-force attack | EXPERT | N/A |
 | 27 | 2026-00-00 |     |  |  | N/A |
 | 28 | 2026-00-00 |     |  |  | N/A |
 | 29 | 2026-00-00 |     |  |  | N/A |
