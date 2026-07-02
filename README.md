@@ -103,20 +103,20 @@ This file tracks my progress through [PortSwigger Web Security Academy](https://
 | `24` | 2026-06-27 | 🔐 Authentication | Password brute-force via password change | ![](https://img.shields.io/badge/PRACTITIONER-F59E0B?style=flat-square) | — |
 | `25` | 2026-06-28 | 🔐 Authentication | 2FA bypass using a brute-force attack | ![](https://img.shields.io/badge/EXPERT-EF4444?style=flat-square) | — |
 | `26` | 2026-06-29 |  Cross-site scripting | Reflected XSS into HTML context with nothing encoded | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
-| `27` | 2026-06-29 | Cross-site scripting | Stored XSS into HTML context with nothing encoded | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
+| `27` | 2026-06-29 |  Cross-site scripting | Stored XSS into HTML context with nothing encoded | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
 | `28` | 2026-06-29 | — | *Pending...* | — | — |
 | `27` | 2026-06-29 | — | *Pending...* | — | — |
 | `28` | 2026-06-29 | — | *Pending...* | — | — |
 | `27` | 2026-06-29 | — | *Pending...* | — | — |
-| `27` | 2026-06-30 | — | DOM XSS in document.write sink using source location.search | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
-| `28` | 2026-06-30 | — | DOM XSS in innerHTML sink using source location.search | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
+| `27` | 2026-06-30 | Cross-site scripting | DOM XSS in document.write sink using source location.search | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
+| `28` | 2026-06-30 | Cross-site scripting | DOM XSS in innerHTML sink using source location.search | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
 | `27` | 2026-06-29 | — | *Pending...* | — | — |
 | `27` | 2026-06-29 | — | *Pending...* | — | — |
 | `27` | 2026-06-29 | — | *Pending...* | — | — |
 | `27` | 2026-06-29 | — | *Pending...* | — | — |
-| `28` | 2026-06-01 | — | DOM XSS in jQuery anchor href attribute sink using location.search source | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
-| `27` | 2026-06-02 | — | DOM XSS in jQuery selector sink using a hashchange event | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
-| `28` | 2026-06-02 | — | Reflected XSS into attribute with angle brackets HTML-encoded | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
+| `28` | 2026-06-01 | Cross-site scripting | DOM XSS in jQuery anchor href attribute sink using location.search source | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
+| `27` | 2026-06-02 | Cross-site scripting | DOM XSS in jQuery selector sink using a hashchange event | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
+| `28` | 2026-06-02 | Cross-site scripting | Reflected XSS into attribute with angle brackets HTML-encoded | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
 | `29` | — | — | *Pending...* | — | — |
 | `30` | — | — | *Pending...* | — | — |
 | `31` | — | — | *Pending...* | — | — |
