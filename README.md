@@ -102,8 +102,8 @@ This file tracks my progress through [PortSwigger Web Security Academy](https://
 | `23` | 2026-06-27 | 🔐 Authentication | Password reset poisoning via middleware | ![](https://img.shields.io/badge/PRACTITIONER-F59E0B?style=flat-square) | — |
 | `24` | 2026-06-27 | 🔐 Authentication | Password brute-force via password change | ![](https://img.shields.io/badge/PRACTITIONER-F59E0B?style=flat-square) | — |
 | `25` | 2026-06-28 | 🔐 Authentication | 2FA bypass using a brute-force attack | ![](https://img.shields.io/badge/EXPERT-EF4444?style=flat-square) | — |
-| `26` | 2026-06-29 |  Cross-site scripting | Reflected XSS into HTML context with nothing encoded | ![](https://img.shields.io/badge/PRACTITIONER-F59E0B?style=flat-square) | — |
-| `27` | 2026-06-29 | Cross-site scripting | Stored XSS into HTML context with nothing encoded | — | — |
+| `26` | 2026-06-29 |  Cross-site scripting | Reflected XSS into HTML context with nothing encoded | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
+| `27` | 2026-06-29 | Cross-site scripting | Stored XSS into HTML context with nothing encoded | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
 | `28` | 2026-06-29 | — | *Pending...* | — | — |
 | `27` | 2026-06-29 | — | *Pending...* | — | — |
 | `28` | 2026-06-29 | — | *Pending...* | — | — |
