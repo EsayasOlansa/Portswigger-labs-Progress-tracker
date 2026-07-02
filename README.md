@@ -107,30 +107,35 @@ This file tracks my progress through [PortSwigger Web Security Academy](https://
 | `26` | 2026-06-29 |  Cross-site scripting | Reflected XSS into HTML context with nothing encoded | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
 | `27` | 2026-06-29 |  Cross-site scripting | Stored XSS into HTML context with nothing encoded | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
 | `28` | 2026-06-29 | Path traversal | File path traversal, simple case | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
-| `27` | 2026-06-30 | Cross-site scripting | DOM XSS in document.write sink using source location.search | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
-| `28` | 2026-06-30 | Cross-site scripting | DOM XSS in innerHTML sink using source location.search | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
-| `27` | 2026-06-30 | Path traversal | File path traversal, traversal sequences blocked with absolute path bypass | ![](https://img.shields.io/badge/PRACTITIONER-F59E0B?style=flat-square) | — |
-| `27` | 2026-06-30 | Path traversal | File path traversal, traversal sequences stripped non-recursively | ![](https://img.shields.io/badge/PRACTITIONER-F59E0B?style=flat-square) | — |
-| `28` | 2026-06-01 | Cross-site scripting | DOM XSS in jQuery anchor href attribute sink using location.search source | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
-| `27` | 2026-06-01 | Cross-site scripting | DOM XSS in jQuery selector sink using a hashchange event | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
-| `28` | 2026-06-02 | Cross-site scripting | Reflected XSS into attribute with angle brackets HTML-encoded | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
-| `29` | 2026-06-02 | Path traversal | File path traversal, traversal sequences stripped with superfluous URL-decode | ![](https://img.shields.io/badge/PRACTITIONER-F59E0B?style=flat-square) | — |
-| `27` | 2026-06-02 | Path traversal | File path traversal, validation of start of path | ![](https://img.shields.io/badge/PRACTITIONER-F59E0B?style=flat-square) | — |
-| `27` | 2026-06-29 | Path traversal | File path traversal, validation of file extension with null byte bypass | ![](https://img.shields.io/badge/PRACTITIONER-F59E0B?style=flat-square) | — |
-| `27` | 2026-06-29 | — | *Pending...* | — | — |
-| `27` | 2026-06-29 | — | *Pending...* | — | — |
-| `27` | 2026-06-29 | — | *Pending...* | — | — |
-| `30` | — | — | *Pending...* | — | — |
-| `31` | — | — | *Pending...* | — | — |
-| `32` | — | — | *Pending...* | — | — |
-| `33` | — | — | *Pending...* | — | — |
-| `34` | — | — | *Pending...* | — | — |
-| `35` | — | — | *Pending...* | — | — |
-| `36` | — | — | *Pending...* | — | — |
-| `37` | — | — | *Pending...* | — | — |
-| `38` | — | — | *Pending...* | — | — |
-| `39` | — | — | *Pending...* | — | — |
-| `40` | — | — | *Pending...* | — | — |
+| `29` | 2026-06-30 | Cross-site scripting | DOM XSS in document.write sink using source location.search | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
+| `30` | 2026-06-30 | Cross-site scripting | DOM XSS in innerHTML sink using source location.search | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
+| `31` | 2026-06-30 | Path traversal | File path traversal, traversal sequences blocked with absolute path bypass | ![](https://img.shields.io/badge/PRACTITIONER-F59E0B?style=flat-square) | — |
+| `32` | 2026-06-30 | Path traversal | File path traversal, traversal sequences stripped non-recursively | ![](https://img.shields.io/badge/PRACTITIONER-F59E0B?style=flat-square) | — |
+| `33` | 2026-06-01 | Cross-site scripting | DOM XSS in jQuery anchor href attribute sink using location.search source | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
+| `34` | 2026-06-01 | Cross-site scripting | DOM XSS in jQuery selector sink using a hashchange event | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
+| `35` | 2026-06-02 | Cross-site scripting | Reflected XSS into attribute with angle brackets HTML-encoded | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
+| `36` | 2026-06-02 | Path traversal | File path traversal, traversal sequences stripped with superfluous URL-decode | ![](https://img.shields.io/badge/PRACTITIONER-F59E0B?style=flat-square) | — |
+| `37` | 2026-06-02 | Path traversal | File path traversal, validation of start of path | ![](https://img.shields.io/badge/PRACTITIONER-F59E0B?style=flat-square) | — |
+| `38` | 2026-06-29 | Path traversal | File path traversal, validation of file extension with null byte bypass | ![](https://img.shields.io/badge/PRACTITIONER-F59E0B?style=flat-square) | — |
+| `39` | 2026-06-00 | — | *Pending...* | — | — |
+| `40` | 2026-06-00 | — | *Pending...* | — | — |
+| `41` | 2026-06-00 | — | *Pending...* | — | — |
+| `42` | 2026-06-00 | — | *Pending...* | — | — |
+| `43` | 2026-06-00 | — | *Pending...* | — | — |
+| `44` | 2026-06-00 | — | *Pending...* | — | — |
+| `45` | 2026-06-00 | — | *Pending...* | — | — |
+| `46` | 2026-06-00 | — | *Pending...* | — | — |
+| `47` | 2026-06-00 | — | *Pending...* | — | — |
+| `48` | 2026-06-00 | — | *Pending...* | — | — |
+| `49` | 2026-06-00 | — | *Pending...* | — | — |
+| `50` | 2026-06-00 | — | *Pending...* | — | — |
+| `51` | 2026-06-00 | — | *Pending...* | — | — |
+| `52` | 2026-06-00 | — | *Pending...* | — | — |
+| `53` | 2026-06-00 | — | *Pending...* | — | — |
+| `54` | 2026-06-00 | — | *Pending...* | — | — |
+| `55` | 2026-06-00 | — | *Pending...* | — | — |
+| `56` | 2026-06-00 | — | *Pending...* | — | — |
+
 
 ---
 
