@@ -112,7 +112,7 @@ This file tracks my progress through [PortSwigger Web Security Academy](https://
 | `27` | 2026-06-29 | — | *Pending...* | — | — |
 | `28` | 2026-06-01 | — | DOM XSS in jQuery anchor href attribute sink using location.search source | — | — |
 | `27` | 2026-06-02 | — | DOM XSS in jQuery selector sink using a hashchange event | — | — |
-
+| `28` | 2026-06-02 | — | Reflected XSS into attribute with angle brackets HTML-encoded | — | — |
 | `29` | — | — | *Pending...* | — | — |
 | `30` | — | — | *Pending...* | — | — |
 | `31` | — | — | *Pending...* | — | — |
