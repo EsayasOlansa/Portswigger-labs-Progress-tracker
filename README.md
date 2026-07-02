@@ -116,7 +116,7 @@ This file tracks my progress through [PortSwigger Web Security Academy](https://
 | `35` | 2026-07-02 | Cross-site scripting | Reflected XSS into attribute with angle brackets HTML-encoded | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
 | `36` | 2026-07-02 | Path traversal | File path traversal, traversal sequences stripped with superfluous URL-decode | ![](https://img.shields.io/badge/PRACTITIONER-F59E0B?style=flat-square) | — |
 | `37` | 2026-07-02 | Path traversal | File path traversal, validation of start of path | ![](https://img.shields.io/badge/PRACTITIONER-F59E0B?style=flat-square) | — |
-| `38` | 2026-07-29 | Path traversal | File path traversal, validation of file extension with null byte bypass | ![](https://img.shields.io/badge/PRACTITIONER-F59E0B?style=flat-square) | — |
+| `38` | 2026-07-02 | Path traversal | File path traversal, validation of file extension with null byte bypass | ![](https://img.shields.io/badge/PRACTITIONER-F59E0B?style=flat-square) | — |
 | `39` | 2026-06-00 | — | *Pending...* | — | — |
 | `40` | 2026-06-00 | — | *Pending...* | — | — |
 | `41` | 2026-06-00 | — | *Pending...* | — | — |
