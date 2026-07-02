@@ -15,8 +15,8 @@
 
 ---
 
-![Solved](https://img.shields.io/badge/Labs%20Solved-25-informational?style=for-the-badge&logo=target&logoColor=white&color=0A84FF)
-![Updated](https://img.shields.io/badge/Last%20Updated-2026--06--28-informational?style=for-the-badge&logo=clockify&logoColor=white&color=F59E0B)
+![Solved](https://img.shields.io/badge/Labs%20Solved-38-informational?style=for-the-badge&logo=target&logoColor=white&color=0A84FF)
+![Updated](https://img.shields.io/badge/Last%20Updated-2026--07--2-informational?style=for-the-badge&logo=clockify&logoColor=white&color=F59E0B)
 ![Level](https://img.shields.io/badge/Level-NEWBIE-informational?style=for-the-badge&logo=hackthebox&logoColor=white&color=22C55E)
 ![Progress](https://img.shields.io/badge/Overall%20Progress-9.1%25-informational?style=for-the-badge&logo=progress&logoColor=white&color=8B5CF6)
 ![Tool](https://img.shields.io/badge/Tool-Burp%20Suite-informational?style=for-the-badge&logo=burpsuite&logoColor=white&color=FF6633)
@@ -111,12 +111,12 @@ This file tracks my progress through [PortSwigger Web Security Academy](https://
 | `30` | 2026-06-30 | Cross-site scripting | DOM XSS in innerHTML sink using source location.search | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
 | `31` | 2026-06-30 | Path traversal | File path traversal, traversal sequences blocked with absolute path bypass | ![](https://img.shields.io/badge/PRACTITIONER-F59E0B?style=flat-square) | — |
 | `32` | 2026-06-30 | Path traversal | File path traversal, traversal sequences stripped non-recursively | ![](https://img.shields.io/badge/PRACTITIONER-F59E0B?style=flat-square) | — |
-| `33` | 2026-06-01 | Cross-site scripting | DOM XSS in jQuery anchor href attribute sink using location.search source | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
-| `34` | 2026-06-01 | Cross-site scripting | DOM XSS in jQuery selector sink using a hashchange event | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
-| `35` | 2026-06-02 | Cross-site scripting | Reflected XSS into attribute with angle brackets HTML-encoded | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
-| `36` | 2026-06-02 | Path traversal | File path traversal, traversal sequences stripped with superfluous URL-decode | ![](https://img.shields.io/badge/PRACTITIONER-F59E0B?style=flat-square) | — |
-| `37` | 2026-06-02 | Path traversal | File path traversal, validation of start of path | ![](https://img.shields.io/badge/PRACTITIONER-F59E0B?style=flat-square) | — |
-| `38` | 2026-06-29 | Path traversal | File path traversal, validation of file extension with null byte bypass | ![](https://img.shields.io/badge/PRACTITIONER-F59E0B?style=flat-square) | — |
+| `33` | 2026-07-01 | Cross-site scripting | DOM XSS in jQuery anchor href attribute sink using location.search source | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
+| `34` | 2026-07-01 | Cross-site scripting | DOM XSS in jQuery selector sink using a hashchange event | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
+| `35` | 2026-07-02 | Cross-site scripting | Reflected XSS into attribute with angle brackets HTML-encoded | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
+| `36` | 2026-07-02 | Path traversal | File path traversal, traversal sequences stripped with superfluous URL-decode | ![](https://img.shields.io/badge/PRACTITIONER-F59E0B?style=flat-square) | — |
+| `37` | 2026-07-02 | Path traversal | File path traversal, validation of start of path | ![](https://img.shields.io/badge/PRACTITIONER-F59E0B?style=flat-square) | — |
+| `38` | 2026-07-29 | Path traversal | File path traversal, validation of file extension with null byte bypass | ![](https://img.shields.io/badge/PRACTITIONER-F59E0B?style=flat-square) | — |
 | `39` | 2026-06-00 | — | *Pending...* | — | — |
 | `40` | 2026-06-00 | — | *Pending...* | — | — |
 | `41` | 2026-06-00 | — | *Pending...* | — | — |
