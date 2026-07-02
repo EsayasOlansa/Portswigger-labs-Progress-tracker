@@ -55,6 +55,7 @@ This file tracks my progress through [PortSwigger Web Security Academy](https://
 | 🔐 Authentication vulnerabilities | `14` | `14` | ![Done](https://img.shields.io/badge/COMPLETE-22C55E?style=flat-square) |
 | 💉 SQL injection | `11` | `18` | ![In progress](https://img.shields.io/badge/IN%20PROGRESS-F59E0B?style=flat-square) |
 | 🚪 Access control | `0` | `13` | ![Not started](https://img.shields.io/badge/NOT%20STARTED-6B7280?style=flat-square) |
+| Cross-site scripting | `7` | `30` | ![In progress](https://img.shields.io/badge/IN%20PROGRESS-F59E0B?style=flat-square) |
 
 ---
 
