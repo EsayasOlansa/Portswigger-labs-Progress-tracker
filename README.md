@@ -107,8 +107,8 @@ This file tracks my progress through [PortSwigger Web Security Academy](https://
 | `28` | 2026-06-29 | — | *Pending...* | — | — |
 | `27` | 2026-06-29 | — | *Pending...* | — | — |
 | `28` | 2026-06-29 | — | *Pending...* | — | — |
-| `27` | 2026-06-29 | — | *Pending...* | — | — |
-| `28` | 2026-06-29 | — | *Pending...* | — | — |
+| `27` | 2026-06-30 | — | DOM XSS in document.write sink using source location.search | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
+| `28` | 2026-06-30 | — | DOM XSS in innerHTML sink using source location.search | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
 | `27` | 2026-06-29 | — | *Pending...* | — | — |
 | `28` | 2026-06-29 | — | *Pending...* | — | — |
 | `27` | 2026-06-29 | — | *Pending...* | — | — |
