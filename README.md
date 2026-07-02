@@ -110,6 +110,7 @@ This file tracks my progress through [PortSwigger Web Security Academy](https://
 | `27` | 2026-06-30 | — | DOM XSS in document.write sink using source location.search | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
 | `28` | 2026-06-30 | — | DOM XSS in innerHTML sink using source location.search | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
 | `27` | 2026-06-29 | — | *Pending...* | — | — |
+| `27` | 2026-06-29 | — | *Pending...* | — | — |
 | `28` | 2026-06-01 | — | DOM XSS in jQuery anchor href attribute sink using location.search source | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
 | `27` | 2026-06-02 | — | DOM XSS in jQuery selector sink using a hashchange event | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
 | `28` | 2026-06-02 | — | Reflected XSS into attribute with angle brackets HTML-encoded | ![](https://img.shields.io/badge/APPRENTICE-22C55E?style=flat-square) | — |
